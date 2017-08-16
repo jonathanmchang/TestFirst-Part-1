@@ -32,12 +32,3 @@ function setPropsOnFunc(obj) {
     }
 }
 
-// function setPropsOnFunc() {
-//     functionObject = function(){
-//     }
-//     functionObject.year = '20??'
-//     return functionObject
-//     functionObject.divideByTwo = function(num) {
-//         return num / 2
-//     }
-// }
