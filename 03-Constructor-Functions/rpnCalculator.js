@@ -6,7 +6,7 @@ RPNCalculator.prototype.push = function(num) {
     this.calcArr.push(num)
 }
 
-RPNCalculator.prototype.toThrow = function (arr) {
+RPNCalculator.prototype.toThrow = function () {
     if (this.calcArr.length < 2) {
         throw "rpnCalculatorInstance is empty"
     }
