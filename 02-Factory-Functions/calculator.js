@@ -1,18 +1,19 @@
+
 function createCalculator() {
-    var value = 0;
-    calculator = {};
-    calculator.value = function () {
-        return value;
+    let value = 0
+    calculator = {}
+    calculator.add = function(num) {
+        value += num
     }
-    calculator.add = function (num) {
-        value += num;
-        return value;
+    calculator.subtract = function(num) {
+       value -= num
     }
-    calculator.subtract = function (num) {
-        value -= num;
+    calculator.value = function(num) {
+        return value
     }
-    calculator.clear = function () {
-        value = 0;
+    calculator.clear = function() {
+        value = 0
     }
-    return calculator;
+
+    return calculator
 }
