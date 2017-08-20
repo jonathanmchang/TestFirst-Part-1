@@ -1,34 +1,32 @@
 function setPropsOnObj(object) {
     object.x = 7
     object['y'] = 8
-    object.onePlus = function(num) {
-        return num + 1
+    object.onePlus = function (num) {
+        return num += 1
     }
     return object
 }
 
-function setPropsOnArr(arrayObject) {
-    arrayObject.hello = function() {
-        return "Hello!"
+function setPropsOnArr(arr) {
+    arr.hello = function() {
+        return 'Hello!'
     }
-    arrayObject['full'] = 'stack'
-    arrayObject[0] = 5
-    arrayObject.twoTimes = function(num) {
+    arr['full'] = 'stack'
+    arr[0] = 5
+    arr.twoTimes = function(num){
         return num * 2
     }
+
+    return arr
 }
 
-function functionObject() {
-    
-}
-
-function setPropsOnFunc(obj) {
-    obj.year = '20??'
-    obj.divideByTwo = function(num) {
+function setPropsOnFunc(func) {
+    func.year = '20??'
+    func.divideByTwo = function(num) {
         return num / 2
     }
-    obj.prototype.helloWorld = function() {
-        return 'Hello World'     
+    func.prototype.helloWorld = function() {
+        return 'Hello World'
     }
+    return 'I am a function object, all functions are objects! Function can have their own properties too!'
 }
-
